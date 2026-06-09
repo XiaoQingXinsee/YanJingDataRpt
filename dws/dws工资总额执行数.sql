@@ -186,5 +186,6 @@ ORDER BY
 
 -- 查询验证
  SELECT *
- FROM dws_hrm_hrd_month_payment_apply_summary_df 
--- WHERE budget_year = '2024';
+ FROM dws_hrm_hrd_month_payment_apply_summary_df
+ where 1=1
+ and budget_year='2024';
