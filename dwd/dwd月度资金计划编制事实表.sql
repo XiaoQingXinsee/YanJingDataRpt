@@ -375,4 +375,4 @@ left join ods_oa_formmain_0680 ywlx
 on ywlx.field0001=main.field0054
 
 WHERE 
-    detail1.formmain_id IS NOT NULL and ;
+    detail1.formmain_id IS NOT NULL;

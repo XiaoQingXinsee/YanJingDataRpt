@@ -249,5 +249,15 @@ on ywlx.field0001=main.field0058
 -- 查询验证
 -- ============================================================
 
-SELECT *
+SELECT distinct organization_code
 FROM dwd_hrm_hrd_month_payment_apply_df  ;
+
+select * from dwd_hrm_hrd_month_payment_apply_df where organization_code='北京工厂';
+-- 北京工厂
+select * from ods_oa_org_unit where id='2089741071008025012';
+
+select * from ods_oa_org_unit where code='2100';
+
+select * from ods_oa_org_unit where name like '%北京燕京啤酒股份有限公司%';
+
+
