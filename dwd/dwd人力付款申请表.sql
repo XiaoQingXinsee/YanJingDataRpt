@@ -256,8 +256,19 @@ select * from dwd_hrm_hrd_month_payment_apply_df where organization_code='北京
 -- 北京工厂
 select * from ods_oa_org_unit where id='2089741071008025012';
 
-select * from ods_oa_org_unit where code='2100';
+select * from ods_oa_org_unit where name='北京工厂';
 
-select * from ods_oa_org_unit where name like '%北京燕京啤酒股份有限公司%';
+select * from ods_oa_org_unit where "right"(name,1)='Z';
+
+
+select * from dwd_hrm_hrd_month_payment_apply_df where organization_id in('2130906607892383263'
+,'2089741071008025012'
+,'-6789248597258907709'
+,'8105509894338201247');
+
+select * FROM ods_oa_formmain_0663 main where main.field0001='2089741071008025012';
+
+
+select field0002,count(field0002) FROM ods_oa_formmain_0663 group by field0002 having count(field0002)>1;
 
 
