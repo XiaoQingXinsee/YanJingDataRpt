@@ -368,7 +368,7 @@ LEFT JOIN ods_oa_formson_0651 detail1
     ON main.id = detail1.formmain_id
 
 -- 新增关联预算单位表
-LEFT JOIN ods_oa_org_unit org
+LEFT JOIN dim_hrm_hrd_org_unit org
     ON org.id = main.field0070::BIGINT
     
 left join ods_oa_formmain_0680 ywlx

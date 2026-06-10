@@ -235,7 +235,7 @@ FROM ods_oa_formmain_0663 main
 INNER JOIN ods_oa_formson_0664 detail3
     ON main.id = detail3.formmain_id
 
-LEFT JOIN ods_oa_org_unit org
+LEFT JOIN  dim_hrm_hrd_org_unit org
     ON org.id = CASE
                     WHEN main.field0001 ~ '^\d+$'
                     THEN main.field0001::BIGINT
